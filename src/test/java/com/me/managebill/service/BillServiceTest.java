@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 
 import com.me.managebill.AppException;
 import com.me.managebill.repository.impl.BillRepositoryImpl;
-import com.me.managebill.service.BillService;
 
 class BillServiceTest {
     private BillService billService;
