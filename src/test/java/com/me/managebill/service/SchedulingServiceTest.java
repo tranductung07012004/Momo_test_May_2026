@@ -10,15 +10,10 @@ import org.junit.jupiter.api.Test;
 
 import com.me.managebill.AppException;
 import com.me.managebill.enums.BillStatus;
-import com.me.managebill.enums.PaymentStatus;
 import com.me.managebill.repository.impl.BillRepositoryImpl;
 import com.me.managebill.repository.impl.PaymentTransactionRepositoryImpl;
 import com.me.managebill.repository.impl.ScheduledPaymentRepositoryImpl;
 import com.me.managebill.repository.impl.WalletRepositoryImpl;
-import com.me.managebill.service.BillService;
-import com.me.managebill.service.PaymentService;
-import com.me.managebill.service.SchedulingService;
-import com.me.managebill.service.WalletService;
 
 class SchedulingServiceTest {
     private BillService billService;

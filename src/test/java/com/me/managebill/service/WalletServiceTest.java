@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import com.me.managebill.AppException;
 import com.me.managebill.Money;
 import com.me.managebill.repository.impl.WalletRepositoryImpl;
-import com.me.managebill.service.WalletService;
 
 class WalletServiceTest {
     private WalletService walletService;

@@ -94,10 +94,7 @@ public class cli {
         if ("LIST_BILL".equals(command)) {
             return formatBills(billService.listBills());
         }
-        if ("SEARCH_BILL_BY_PROVIDER".equals(command)) {
-            requireArgs(args, 1, "SEARCH_BILL_BY_PROVIDER <provider>");
-            return formatBills(billService.searchByProvider(args[0]));
-        }
+        
         if ("PAY".equals(command)) {
             if (args.length == 0) {
                 throw new IllegalArgumentException("PAY <billId1> <billId2> ...");

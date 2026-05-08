@@ -15,9 +15,6 @@ import com.me.managebill.enums.PaymentChannel;
 import com.me.managebill.repository.impl.BillRepositoryImpl;
 import com.me.managebill.repository.impl.PaymentTransactionRepositoryImpl;
 import com.me.managebill.repository.impl.WalletRepositoryImpl;
-import com.me.managebill.service.BillService;
-import com.me.managebill.service.PaymentService;
-import com.me.managebill.service.WalletService;
 
 class PaymentServiceTest {
     private BillService billService;

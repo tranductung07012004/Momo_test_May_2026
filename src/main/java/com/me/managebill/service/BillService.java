@@ -56,14 +56,6 @@ public class BillService {
                 .collect(Collectors.toList());
     }
 
-    public List<Bill> searchByProvider(String provider) {
-        isTextValid(provider, "provider");
-        String normalized = provider.toLowerCase(Locale.ROOT);
-        return listBills().stream()
-                .filter(b -> b.provider().toLowerCase(Locale.ROOT).contains(normalized))
-                .collect(Collectors.toList());
-    }
-
     public Bill getBillOrThrow(String id) {
         return billRepository.findById(id)
                 .orElseThrow(() -> new AppException("Bill not found: " + id));
